@@ -73,7 +73,7 @@ code xray.json
 ```
 {% endcode %}
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -89,13 +89,13 @@ aws xray create-group \
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -136,7 +136,7 @@ Every time we add a container definition to the `docker-compose` file or we use 
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -148,25 +148,25 @@ Every time we add a container definition to the `docker-compose` file or we use 
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>The Docker container seems to be running. Inside the contianer, I find that the AWS credentials are not correctly injected into the container. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>The Docker container seems to be running. Inside the contianer, I find that the AWS credentials are not correctly injected into the container. </p></figcaption></figure>
 
 </div>
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>I get no data on X-Ray console. Something must be wrong. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>I get no data on X-Ray console. Something must be wrong. </p></figcaption></figure>
 
 </div>
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>No credentials provided</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>No credentials provided</p></figcaption></figure>
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Hardcoded the credential values into the docker-compose file did the magic <br>(This is a very poor thing to do in terms of security. I'm doing it this way only because I'm testing things out!).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Hardcoded the credential values into the docker-compose file did the magic <br>(This is a very poor thing to do in terms of security. I'm doing it this way only because I'm testing things out!).</p></figcaption></figure>
 
 </div>
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>The span data are coming through to X-ray on AWS Cloud.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>The span data are coming through to X-ray on AWS Cloud.</p></figcaption></figure>
 
 
 
@@ -180,7 +180,7 @@ Every time we add a container definition to the `docker-compose` file or we use 
 
 ### 2.1 AWS X-Ray
 
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 * In our Bootcamp context, this X-ray is another container running alongside our application (the other containers - `backend-flask`, `frontend-react-js`, `dynamodb-local`, and `db`).
 * **X-Ray** collects the data from our local machine, and send them in batches to AWS using the AWS APIs.&#x20;
