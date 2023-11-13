@@ -19,7 +19,7 @@ description: 'Troubleshooting for ValueError: Invalid endpoint'
 
 </div>
 
-## 2. Analysis
+## 2. Analysis & Solution
 
 * [ ] Check your variables (if the values are set)
 * [ ] Restart `docker-compose`
@@ -40,7 +40,7 @@ I restarted the `docker-compose`, however, this wouldn't fix the issue. In case 
 
 ***
 
-## 3. Fix
+## 3. Result
 
 After ticking all the boxes of the list suggested in the step 2. Analysis, the CloudWatch agent  correctly created a log group called `cruddur`.&#x20;
 

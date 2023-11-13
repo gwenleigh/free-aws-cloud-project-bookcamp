@@ -4,10 +4,10 @@
 
 * [ ] ds
 
-## 2. Analysis
+## 2. Analysis & Solution
 
 * dd
 
-## 3. Fix
+## 3. Result
 
 * d
