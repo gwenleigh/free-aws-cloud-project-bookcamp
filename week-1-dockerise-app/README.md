@@ -137,7 +137,7 @@ We completed our Docker container simulation. Now we will build a Docker image f
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -157,7 +157,7 @@ These are various Docker commands that runs a `backend-flask` container from the
     * `set FRONTEND_URL="*"`
     * `set BACKEND_URL="*"`
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Troubleshooting Docker containers
 
@@ -171,7 +171,7 @@ In Gitpods, there are two ways to open view the logs. The below image shows both
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The backend-container erroring out.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>The backend-container erroring out.</p></figcaption></figure>
 
 </div>
 
@@ -183,7 +183,7 @@ Maybe something is wrong with the env variables. Let's check if the values are c
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Inside the interactive docker.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Inside the interactive docker.</p></figcaption></figure>
 
 </div>
 
@@ -193,7 +193,7 @@ Well, it turns out, I didn't append the desired endpoint (`/api/activities/home`
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Now it works!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Now it works!</p></figcaption></figure>
 
 </div>
 
@@ -266,7 +266,7 @@ We can compose multiple container definitions into a single yaml file and run it
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -274,13 +274,13 @@ The image below is the result of `docker-compose up`. The two containers for the
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Our Cruddur application at the frontend endpoint when the Frontend container is running. </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Our Cruddur application at the frontend endpoint when the Frontend container is running. </p></figcaption></figure>
 
 </div>
 

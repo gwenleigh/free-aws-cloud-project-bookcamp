@@ -57,7 +57,7 @@ This book is written under the [Creative Commons NonCommercial license](https://
 
 <div align="right">
 
-<figure><img src=".gitbook/assets/image (8).png" alt="" width="113"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1).png" alt="" width="113"><figcaption></figcaption></figure>
 
 </div>
 

@@ -35,6 +35,7 @@ layout:
 
 * Python
   * [watchtower](../week-1-dockerise-app/): a log handler for [Amazon Web Services CloudWatch Logs](https://aws.amazon.com/blogs/aws/cloudwatch-log-service/).
+  * AWS: [Amazon CloudWatch Logs endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/cwl\_region.html)
 
 ### 2.3.0 Rollbar
 
