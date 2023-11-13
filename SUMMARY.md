@@ -7,7 +7,7 @@
   * [Week 1 Resources](week-1-dockerise-app/week-1-resources.md)
 * [Week 2 Distributed Tracing](week-2-distributed-tracing/README.md)
   * [2.1.0 Instrument X-Ray](week-2-distributed-tracing/2.1.0-instrument-x-ray/README.md)
-    * [2.1.1](week-2-distributed-tracing/2.1.0-instrument-x-ray/2.1.1.md)
+    * [2.1.1 X-Ray Subsegment Trial](week-2-distributed-tracing/2.1.0-instrument-x-ray/2.1.1-x-ray-subsegment-trial.md)
   * [2.2.0 CloudWatch Logs](week-2-distributed-tracing/2.2.0-cloudwatch-logs/README.md)
     * [Bug Fix: Invalid endpoint](week-2-distributed-tracing/2.2.0-cloudwatch-logs/bug-fix-invalid-endpoint.md)
   * [2.3.0 Rollbar](week-2-distributed-tracing/2.3.0-rollbar.md)
