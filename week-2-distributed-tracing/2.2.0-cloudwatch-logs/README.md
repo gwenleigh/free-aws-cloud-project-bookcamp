@@ -1,6 +1,24 @@
+---
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: true
+---
+
 # 2.2.0 CloudWatch Logs
 
-### **Learning Materials**
+## **0. Learning Materials**
 
 * Video: [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4\&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv\&index=31\&ab\_channel=ExamPro)
 * Andrew's repo: [week-2-cloudwatch-logs](https://github.com/omenking/aws-bootcamp-cruddur-2023/tree/week-2-cloudwatch-logs)
@@ -8,16 +26,20 @@
 
 ### Task List
 
-* [ ] a
-* [ ] b
-* [ ] c
-* [ ] d
+* [ ] 1\. Implement a CloudWatch agent in backend
+  * [ ] 1.1. Plant a logger in the flask server `app`.
+  * [ ] 1.2. Set logger in the service (`home_activities`)
+* [ ] 2\. Update the backend docker container
 
+***
 
+## 1. Workflow
 
-### Workflow
+### 1. Implement a CloudWatch agent in backend
 
-Add the python library `watchtower` which is a  log handler for [Amazon Web Services CloudWatch Logs](https://aws.amazon.com/blogs/aws/cloudwatch-log-service/). Then run the `pip install` command to install it in our local environment.&#x20;
+#### 1.1. Plant a logger in the flask server app.
+
+The python library `watchtower` is a log handler for [Amazon Web Services CloudWatch Logs](https://aws.amazon.com/blogs/aws/cloudwatch-log-service/). Run `pip install` to install it in local.&#x20;
 
 {% code title="requirements.txt" overflow="wrap" lineNumbers="true" %}
 ```diff
@@ -27,9 +49,7 @@ Add the python library `watchtower` which is a  log handler for [Amazon Web Serv
 
 * `pip install -r requirements.txt`
 
-
-
-Update `app.py`.
+Update `app.py` by adding the following snippets across the file. Refer to [the actual code here](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/blob/02-02-cloudwatch-logs/backend-flask/app.py).&#x20;
 
 {% code title="app.py" lineNumbers="true" %}
 ```diff
@@ -38,10 +58,6 @@ Update `app.py`.
 + from time import strftime
 ```
 {% endcode %}
-
-
-
-Add the following to the `app.py` where they belong. Refer to the actual code.&#x20;
 
 {% code title="app.py" lineNumbers="true" %}
 ```python
@@ -63,9 +79,18 @@ def after_request(response):
 ```
 {% endcode %}
 
+{% code title="app.py " lineNumbers="true" %}
+```diff
+@app.route("/api/activities/home", methods=['GET'])
++ def data_home(logger=LOGGER):
+    data = HomeActivities.run()
+    return data, 200
+```
+{% endcode %}
 
+#### 1.2. Set logger in the service (home\_activities)
 
-
+* [Andrew's code](https://github.com/omenking/aws-bootcamp-cruddur-2023/compare/main...week-2-cloudwatch-logs)
 
 {% code title="home_activities.py" lineNumbers="true" %}
 ```diff
@@ -75,18 +100,43 @@ from opentelemetry import trace
 ...
 
 class HomeActivities:
-  def run(logger):
-    logger.info("HomeActivities")
+  def run():
++    logger.info("HomeActivities")
+
+...
 ```
 {% endcode %}
 
 
 
+### 2. Update the backend docker container
 
+The following env variables will be used by `watchtower`.
 
+{% code title="docker-compose.yml" lineNumbers="true" %}
+```diff
+version: "3.8"
+services:
+  backend-flask:
+    environment:
+      ...
+      AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
++     AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION}"
++     AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
++     AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+    build: ./backend-flask
+    ...
+```
+{% endcode %}
 
+Now our app is ready to test the CloudWatch agent in action.&#x20;
 
+* Run `docker-compose`&#x20;
+  * then hit some backend endpoints by clicking around in the frontend
+* Check your AWS CloudWatch console.
 
+<div data-full-width="true">
 
+<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption><p>Log streams are coming through. </p></figcaption></figure>
 
-
+</div>

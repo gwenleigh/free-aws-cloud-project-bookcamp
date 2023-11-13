@@ -1,3 +1,9 @@
+---
+description: >-
+  Andrew walks us through improving the observability using 4 different tracing
+  tools - AWS X-Ray, AWS CloudWatch, Rollbar and Honeycomb.
+---
+
 # Week 2 Distributed Tracing
 
 ### **Learning Materials**

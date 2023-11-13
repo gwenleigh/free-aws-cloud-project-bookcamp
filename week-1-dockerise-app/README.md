@@ -39,7 +39,7 @@ layout:
 
 We create a `Dockerfile` in the folder `backend-flask`.
 
-{% code lineNumbers="true" %}
+{% code title="backend-flask/Dockerfile" lineNumbers="true" %}
 ```docker
 FROM python:3.10-slim-buster
 
