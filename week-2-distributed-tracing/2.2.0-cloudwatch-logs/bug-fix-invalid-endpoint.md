@@ -27,7 +27,7 @@ description: 'Troubleshooting for ValueError: Invalid endpoint'
 
 I tried `echoing` all the variables I added to the env variables for the `backend` in `docker-compose`. It turns out, `AWS_DEFAULT_REGION` has no value set to it.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can assign values to environmental variables in Linux as follows:
 

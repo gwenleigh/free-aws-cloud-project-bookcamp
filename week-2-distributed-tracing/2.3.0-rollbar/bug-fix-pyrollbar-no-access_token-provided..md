@@ -32,14 +32,14 @@ export ROLLBAR_ACCESS_TOKEN="YOUR_ROLLBAR_TOKEN_FROM_PROJECT"
 gp env ROLLBAR_ACCESS_TOKEN="YOUR_ROLLBAR_TOKEN_FROM_PROJECT"
 ```
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Unbelievable that Rollbar still hasn't updated this code that breaks. @app.before_first_request decorator was depricated from Flask 2.3 Also, there is no function call for init_rollbar(). Rollbar, really?</p></figcaption></figure>
 
 However, I still get the same error that the `access_token` is not provided. Well... the error message was quite stragithforward in fact. It's been telling me to "call" the `rollbar.init()` function.
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 * [x] Reorganise the Rollbar code.
-* [x] Call `init_rollbar()` under `with app.app_context():` function.
+* [x] Call `init_rollbar()` under `with app.app_context():` function ([code fix here](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/blob/02-03-rollbar/backend-flask/app.py)).
 
 {% code title="app.py" lineNumbers="true" %}
 ```python

@@ -41,9 +41,10 @@ layout:
 ### 2.3.0 Rollbar
 
 * [Rollbar](https://rollbar.com/): error monitoring platform
+  * [Rollbar SDK configuration reference](https://docs.rollbar.com/docs/python-configuration-reference)
 * StackOverFlow: [flask-deprecated-before-first-request-how-to-update](https://stackoverflow.com/questions/73570041/flask-deprecated-before-first-request-how-to-update/74629704#74629704)
 
 ### 2.4.0 X-Ray Subsegments
 
-*
-
+* Olga Timofeeva's blog: [AWS Free Cloud Bootcamp: Instrumenting AWS X-Ray Subsegments](https://olley.hashnode.dev/aws-free-cloud-bootcamp-instrumenting-aws-x-ray-subsegments)
+* [Sending segment batch failed with: NoCredentialProviders: no valid provider #59](https://github.com/aws/aws-xray-daemon/issues/59)
