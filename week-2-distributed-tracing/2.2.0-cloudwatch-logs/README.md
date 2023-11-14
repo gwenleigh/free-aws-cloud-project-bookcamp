@@ -31,6 +31,10 @@ layout:
   * [ ] 1.2. Set logger in the service (`home_activities`)
 * [ ] 2\. Update the backend docker container
 
+### Env Variables
+
+<table><thead><tr><th width="168">Micro service</th><th>Variables</th></tr></thead><tbody><tr><td>backend</td><td><ul><li><code>HONEYCOMB_API_KEY</code></li><li><code>OTEL_SERVICE_NAME</code></li><li><code>OTEL_EXPORTER_OTLP_ENDPOINT</code></li><li><code>OTEL_EXPORTER_OTLP_HEADERS</code></li><li><code>AWS_XRAY_URL</code></li><li><code>AWS_XRAY_DAEMON_ADDRESS</code></li><li><strong><code>AWS_DEFAULT_REGION</code></strong></li><li><strong><code>AWS_ACCESS_KEY_ID</code></strong></li><li><strong><code>AWS_SECRET_ACCESS_KEY</code></strong></li></ul></td></tr><tr><td>x-ray daemon</td><td><ul><li><code>AWS_ACCESS_KEY_ID</code></li><li><code>AWS_SECRET_ACCESS_KEY</code></li><li><code>AWS_REGION</code></li></ul></td></tr></tbody></table>
+
 ***
 
 ## 1. Workflow

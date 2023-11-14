@@ -15,7 +15,7 @@ description: 'Troubleshooting for ValueError: Invalid endpoint'
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -27,7 +27,7 @@ description: 'Troubleshooting for ValueError: Invalid endpoint'
 
 I tried `echoing` all the variables I added to the env variables for the `backend` in `docker-compose`. It turns out, `AWS_DEFAULT_REGION` has no value set to it.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can assign values to environmental variables in Linux as follows:
 
@@ -44,13 +44,13 @@ I restarted the `docker-compose`, however, this wouldn't fix the issue. In case 
 
 After ticking all the boxes of the list suggested in the step 2. Analysis, the CloudWatch agent  correctly created a log group called `cruddur`.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 The CloudWatch agent is diligently working on our Cruddur backend and sending over http requests to AWS CloudWatch.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>A list of log streams coming through</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>A list of log streams coming through</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Even logs showing a successful HTTP GET request handling</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Even logs showing a successful HTTP GET request handling</p></figcaption></figure>
 
 ## Resources
 

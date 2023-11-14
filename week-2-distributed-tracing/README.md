@@ -6,7 +6,7 @@ description: >-
 
 # Week 2 Distributed Tracing
 
-### **Learning Materials**
+## 0. **Learning Materials**
 
 * Video: [FREE AWS Cloud Project Bootcamp (Week 2) - Distributed Tracing](https://www.youtube.com/watch?v=2GD9xCzRId4\&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv\&index=28\&ab\_channel=ExamPro)
 * Andrew's repo: [week-2](https://github.com/omenking/aws-bootcamp-cruddur-2023/tree/week-2)

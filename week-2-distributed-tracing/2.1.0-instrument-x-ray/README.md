@@ -28,9 +28,9 @@ layout:
 
 ### Env variables
 
-<table><thead><tr><th width="168">Micro service</th><th>Variables</th></tr></thead><tbody><tr><td>backend</td><td><ul><li><code>HONEYCOMB_API_KEY</code></li><li><code>OTEL_SERVICE_NAME</code></li><li><code>OTEL_EXPORTER_OTLP_ENDPOINT</code></li><li><code>OTEL_EXPORTER_OTLP_HEADERS</code></li><li><code>AWS_XRAY_URL</code></li><li><code>AWS_XRAY_DAEMON_ADDRESS</code></li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="168">Micro service</th><th>Variables</th></tr></thead><tbody><tr><td>backend</td><td><ul><li><code>HONEYCOMB_API_KEY</code></li><li><code>OTEL_SERVICE_NAME</code></li><li><code>OTEL_EXPORTER_OTLP_ENDPOINT</code></li><li><code>OTEL_EXPORTER_OTLP_HEADERS</code></li><li><code>AWS_XRAY_URL</code></li><li><code>AWS_XRAY_DAEMON_ADDRESS</code></li></ul></td></tr><tr><td>x-ray daemon</td><td><ul><li><strong><code>AWS_ACCESS_KEY_ID</code></strong></li><li><strong><code>AWS_SECRET_ACCESS_KEY</code></strong></li><li><strong><code>AWS_REGION</code></strong></li></ul></td></tr></tbody></table>
 
-
+***
 
 ## 1. Workflow
 
@@ -148,25 +148,25 @@ Every time we add a container definition to the `docker-compose` file or we use 
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>The Docker container seems to be running. Inside the contianer, I find that the AWS credentials are not correctly injected into the container. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>The Docker container seems to be running. Inside the contianer, I find that the AWS credentials are not correctly injected into the container. </p></figcaption></figure>
 
 </div>
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>I get no data on X-Ray console. Something must be wrong. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>I get no data on X-Ray console. Something must be wrong. </p></figcaption></figure>
 
 </div>
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>No credentials provided</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>No credentials provided</p></figcaption></figure>
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Hardcoded the credential values into the docker-compose file did the magic <br>(This is a very poor thing to do in terms of security. I'm doing it this way only because I'm testing things out!).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Hardcoded the credential values into the docker-compose file did the magic <br>(This is a very poor thing to do in terms of security. I'm doing it this way only because I'm testing things out!).</p></figcaption></figure>
 
 </div>
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>The span data are coming through to X-ray on AWS Cloud.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>The span data are coming through to X-ray on AWS Cloud.</p></figcaption></figure>
 
 
 

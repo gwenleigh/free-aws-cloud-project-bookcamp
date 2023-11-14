@@ -1,4 +1,5 @@
 ---
+description: Observability and tracing
 layout:
   title:
     visible: true
@@ -39,7 +40,8 @@ layout:
 
 ### 2.3.0 Rollbar
 
-* sd
+* [Rollbar](https://rollbar.com/): error monitoring platform
+* StackOverFlow: [flask-deprecated-before-first-request-how-to-update](https://stackoverflow.com/questions/73570041/flask-deprecated-before-first-request-how-to-update/74629704#74629704)
 
 ### 2.4.0 X-Ray Subsegments
 
