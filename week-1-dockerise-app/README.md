@@ -157,7 +157,7 @@ These are various Docker commands that runs a `backend-flask` container from the
     * `set FRONTEND_URL="*"`
     * `set BACKEND_URL="*"`
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Troubleshooting Docker containers
 
