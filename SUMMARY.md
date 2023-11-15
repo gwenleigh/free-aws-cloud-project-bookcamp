@@ -13,7 +13,7 @@
   * [2.3.0 Rollbar](week-2-distributed-tracing/2.3.0-rollbar/README.md)
     * [Bug Fix: AttributeError: 'Flask' object has no attribute 'before\_first\_request'.](week-2-distributed-tracing/2.3.0-rollbar/bug-fix-attributeerror-flask-object-has-no-attribute-before\_first\_request..md)
     * [Bug Fix: pyrollbar: No access\_token provided.](week-2-distributed-tracing/2.3.0-rollbar/bug-fix-pyrollbar-no-access\_token-provided..md)
-  * [2.4.0 X-Ray Subsegments](week-2-distributed-tracing/2.4.0-x-ray-subsegments.md)
+  * [2.4.0 X-Ray Subsegments Solved](week-2-distributed-tracing/2.4.0-x-ray-subsegments-solved.md)
   * [Week 2 Resources](week-2-distributed-tracing/week-2-resources.md)
 * [Week x skeleton](week-x-skeleton/README.md)
   * [0.0.0](week-x-skeleton/0.0.0/README.md)

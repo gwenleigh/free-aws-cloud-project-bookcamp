@@ -46,5 +46,8 @@ layout:
 
 ### 2.4.0 X-Ray Subsegments
 
-* Olga Timofeeva's blog: [AWS Free Cloud Bootcamp: Instrumenting AWS X-Ray Subsegments](https://olley.hashnode.dev/aws-free-cloud-bootcamp-instrumenting-aws-x-ray-subsegments)
+* Olga Timofeeva's blog: [How to add custom X-Ray Segments for Containerised Flask Application](https://olley.hashnode.dev/aws-free-cloud-bootcamp-instrumenting-aws-x-ray-subsegments)
 * [Sending segment batch failed with: NoCredentialProviders: no valid provider #59](https://github.com/aws/aws-xray-daemon/issues/59)
+* **AWS**&#x20;
+  * [AWS X-Ray concepts](https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html#xray-concepts-segments)
+  * [Generating custom subsegments with the X-Ray SDK for Python](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python-subsegments.html)
