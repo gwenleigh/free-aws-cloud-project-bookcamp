@@ -19,6 +19,9 @@ layout:
 * Video: [Week 2 Instrument XRay](https://www.youtube.com/watch?v=n2DTsuBrD\_A\&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv\&index=30\&ab\_channel=ExamPro)
 * Andrew's repo: [week-2-xray](https://github.com/omenking/aws-bootcamp-cruddur-2023/tree/week-2-xray)
 * My branch repo: [02-01-instrument-xray](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/tree/02-01-instrument-xray)
+  * My commits:
+    * [#9](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/9) [Instrumented X-ray (and container)](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/1b98ea63c3238ab5a0016b99174028e305edc01c)
+    * [#9](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/9) [Implemented custom x-ray segment](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/def86e4f46123ebe9189d0010d785c3429fb024f)
 
 ### Task List
 

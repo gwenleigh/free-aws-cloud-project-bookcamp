@@ -143,6 +143,13 @@ Now, replace the existing `checkAuth()` function that uses `Cookie` with the fol
 
 **Pick up where you left off**
 
+* fix :`a/ctivity_uuid`&#x20;
+  * one of the routes in the `app.py`
+
+[https://youtu.be/9obl7rVgzJw?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv](https://youtu.be/9obl7rVgzJw?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
+
+
+
 <figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 

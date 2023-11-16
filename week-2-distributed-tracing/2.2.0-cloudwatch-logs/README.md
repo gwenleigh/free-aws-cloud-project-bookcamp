@@ -22,7 +22,10 @@ layout:
 
 * Video: [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4\&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv\&index=31\&ab\_channel=ExamPro)
 * Andrew's repo: [week-2-cloudwatch-logs](https://github.com/omenking/aws-bootcamp-cruddur-2023/tree/week-2-cloudwatch-logs)
-* My branch repo:&#x20;
+* My branch repo: [02-02-cloudwatch-logs](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/tree/02-02-cloudwatch-logs)
+  * My commits:
+    * [#12](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/12) [Implemented CloudWatch agent in backend](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/ebca395a2851244edea48a93a4e2b994884c96b0)
+    * [#12](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/12) [Minor bug fix on home\_activities](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/2601929374e0dada7b10556bfd2294dc0dbb4d2c)
 
 ### Task List
 

@@ -11,6 +11,9 @@ description: >-
 * Video: [FREE AWS Cloud Project Bootcamp (Week 2) - Distributed Tracing](https://www.youtube.com/watch?v=2GD9xCzRId4\&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv\&index=28\&ab\_channel=ExamPro)
 * Andrew's repo: [week-2](https://github.com/omenking/aws-bootcamp-cruddur-2023/tree/week-2)
 * My branch repo: [02-00-distributed-tracing](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/tree/02-00-distributed-tracing)
+  * My commits:
+    * [#7](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/7) [Instrumented HoneyComb in the backend](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/1ded8b52285b8c25da74db6729ee3bfe85317849)
+    * [#7](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/7) [Customised the HooneyComb tracing](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/d66e92d59355a36c1453e81481c6a538b3f74fdc)
 
 ### Task List
 

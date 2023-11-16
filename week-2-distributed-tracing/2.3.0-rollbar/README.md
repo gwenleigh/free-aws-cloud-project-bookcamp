@@ -5,6 +5,10 @@
 * Video: [Week 2 - Rollbar](https://www.youtube.com/watch?v=xMBDAb5SEU4\&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv\&index=33\&ab\_channel=ExamPro)
 * Andrew's repo: [week-2-rollbar](https://github.com/omenking/aws-bootcamp-cruddur-2023/tree/week-2-rollbar)
 * My branch repo: [02-03-rollbar](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/tree/02-03-rollbar)
+  * My commits:
+    * [#14](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/14) [Implemented Rollbar in the backend](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/002a65aa265f205c369e7f0eceeabff9f1c5c27e)
+    * [#14](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/14) [Minor changes to troubleshoot rollbar not calling home](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/b496fd01a4bf9ff6058ce907150df3d574bdb30a)
+    * [#14](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/issues/14) [BUG FIX rollbar now colling home, spans comming through](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/commit/465723776c1b9daee1799896ed7d06ccf93822a0)
 
 ### Task List
 
