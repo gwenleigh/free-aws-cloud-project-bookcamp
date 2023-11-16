@@ -13,14 +13,14 @@ layout:
     visible: true
 ---
 
-# Week 2 Resources
+# Week 3 Resources
 
-### **Week 2 Live stream**
+### **Week 3 Live stream**
 
 * [OpenTelemetry](https://opentelemetry.io/)
 * [HoneyComb in Python](https://docs.honeycomb.io/getting-data-in/opentelemetry/python-distro/): sending log data to your HoneyComb environment
 * HoneyComb trace - [who am I](https://honeycomb-whoami.glitch.me/)
-* [OpenTelemetry for Python](https://docs.honeycomb.io/getting-data-in/opentelemetry/python-distro/)
+*
 
 ### 2.1.0 Instrument XRay
 
@@ -54,4 +54,4 @@ layout:
 
 ### Brilliant
 
-* Josh Hargett's blog: [the amazing summary of the entire week 2](https://awstip.com/week-2-aws-cloud-bootcamp-a401e852a9e4)
+* Josh Hargett's blog: [the amazing summary of the entire week 3](https://awstip.com/week-3-aws-cloud-bootcamp-a9efd2b51f59)

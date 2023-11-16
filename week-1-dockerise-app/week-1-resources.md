@@ -26,11 +26,15 @@ layout:
 * [jfrog.com](https://jfrog.com): the JFrog Platform gives you an end-to-end pipeline to control the flow of your binaries from build to production.
 * [Python library](https://github.com/docker-library/python): docker file repository for Python containerisation
 
-### **Week 1 - Create the notification feature (backend and front)**
+### **1.1.0 Create the notification feature (backend and front)**
 
 * [OpenAPI](https://www.openapis.org/): a specification for a machine-readable interface definition language for describing, producing, consuming and visualizing web services.
 * [ReadMe](https://readme.com/): transforms your API docs into interactive hubs that help developers succeed.
 
-### Week 1 - DynamoDB and Postgres vs Docker
+### 1.2.0 DynamoDB and Postgres vs Docker
 
 * AWS [Deploying DynamoDB locally on your computer](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html): Download DynamoDB local for Docker
+
+### Brilliant
+
+* Josh Hargett's blog: [the amazing summary of the entire week 1](https://awstip.com/week-1-aws-cloud-bootcamp-512bffb00a6a)
