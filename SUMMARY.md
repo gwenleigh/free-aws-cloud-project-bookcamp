@@ -16,6 +16,7 @@
   * [2.4.0 X-Ray Subsegments Solved](week-2-distributed-tracing/2.4.0-x-ray-subsegments-solved.md)
   * [Week 2 Resources](week-2-distributed-tracing/week-2-resources.md)
 * [Week 3 Decentralised Authentication](week-3-decentralised-authentication/README.md)
+  * [Bug Fix:](week-3-decentralised-authentication/bug-fix.md)
   * [3.1.0 Cognito Custom Pages](week-3-decentralised-authentication/3.1.0-cognito-custom-pages/README.md)
     * [Bug Fix:](week-3-decentralised-authentication/3.1.0-cognito-custom-pages/bug-fix.md)
   * [3.2.0 Cognito JWT Server Side Verify](week-3-decentralised-authentication/3.2.0-cognito-jwt-server-side-verify.md)

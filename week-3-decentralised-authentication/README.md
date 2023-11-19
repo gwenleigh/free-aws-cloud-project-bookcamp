@@ -27,24 +27,50 @@
 
 You could tailor the Cognito userpool configurations during creation based on your needs. I have listed the configurations we use for this Cruddur project beneath the image.&#x20;
 
-<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (60).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Steps 2**
+**Step 1.**
 
-* Password policy mode: Cognito default
-* No MFA
-* Self-service account recovery: :white\_check\_mark: Enable self-service account recovery - Recommended
-* Delivery method for user account recovery messages: Email only
+* Cognito user pool sign-in options: :white\_check\_mark:User name, :white\_check\_mark:Email
+
+**Step 2.**&#x20;
+
+* **Password Policy**
+  * **Password policy mode**: :radio\_button: Cognito defaults&#x20;
+  * **Multi-factor authentication**: :radio\_button: No MFA
+  * **User account recovery**
+    * **Self-service account recovery**: :white\_check\_mark: Enable self-service account recovery - Recommended
+    * **Delivery method for user account recovery messages**: :radio\_button:  Email only
+
+**Step 3.**
+
+* **Self-service sign-up**: Self-registration: :white\_check\_mark: Enable self-registration
+* **Attribute verification and user account confirmation**
+  * Cognito-assisted verification and confirmation
+    * :white\_check\_mark: Allow Cognito to automatically send messages to verify and confirm - Recommended
+  * Attributes to verify: :radio\_button:Send email message, verify email address
+*   #### Verifying attribute changes
+
+    :white\_check\_mark: Keep original attribute value active when an update is pending - Recommended
+
+    * **Active attribute values when an update is pending**: :radio\_button:Email address
+* **Required attributes**:
 
 **Step 4**&#x20;
 
-* Email provider: Send email with Cognito
+* **Email: Email provider**: :radio\_button: Send email with Cognito
 
 **Step 5**&#x20;
 
-* User pool name: `cruddur-user-pool`&#x20;
+* **User pool name**: `cruddur-user-pool`&#x20;
 * :no\_entry: DO NOT Use the Cognito Hosted UI Initial app
-* client: Public client
+* **Initial app client: App type**: :radio\_button: Public client
+
+Then create the pool.
+
+
+
+
 
 
 
@@ -119,6 +145,12 @@ Now, replace the existing `checkAuth()` function that uses `Cookie` with the fol
 
 
 
+#### 1.2.5. Implement Cognito Auth in SignIn.js
+
+
+
+
+
 
 
 ## 2. Discussion: AWS Amplify
@@ -152,5 +184,8 @@ Now, replace the existing `checkAuth()` function that uses `Cookie` with the fol
 
 <figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
+### 2.3. package-lock.json
 
 
+
+\
