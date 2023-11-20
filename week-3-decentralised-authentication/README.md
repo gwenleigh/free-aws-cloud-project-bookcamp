@@ -2,7 +2,7 @@
 
 ## **0. Learning Materials**
 
-* Video: [FREE AWS Cloud Project Bootcamp (Week 3) - Decentralized Authenication](https://www.youtube.com/watch?v=9obl7rVgzJw\&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv\&index=40\&ab\_channel=ExamPro)
+* Video: [FREE AWS Cloud Project Bootcamp (Week 3) - Decentralized Authentication](https://www.youtube.com/watch?v=9obl7rVgzJw\&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv\&index=40\&ab\_channel=ExamPro)
 * Andrew's repo: [week-3-again](https://github.com/omenking/aws-bootcamp-cruddur-2023/tree/week-3-again)
 * My branch repo: [03-decentralized-authentication](https://github.com/mariachiinajar/aws-bootcamp-cruddur-2023-again/tree/03-decentralized-authentication)
   * My commits:&#x20;
@@ -25,7 +25,7 @@
 
 ### 1.1. Create Cognito Userpool in AWS Cognito
 
-You could tailor the Cognito userpool configurations during creation based on your needs. I have listed the configurations we use for this Cruddur project beneath the image.&#x20;
+You could tailor the Cognito userpool configurations during creation based on your needs. I have listed the configurations Andrew used for this Cruddur project beneath the image.&#x20;
 
 <figure><img src="../.gitbook/assets/image (60).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -70,10 +70,6 @@ Then create the pool.
 
 
 
-
-
-
-
 ### 1.2. Integrate Cognito to the Frontend
 
 #### 1.2.1. Setup: install packages
@@ -91,9 +87,9 @@ After installing, make sure that the package is included in the updated `package
 
 <figure><img src="../.gitbook/assets/image (63).png" alt="" width="442"><figcaption></figcaption></figure>
 
-#### 1.2.2. Embed AWS Amplify in the Frontend application.
+#### 1.2.2. Implement AWS Amplify in the Frontend application.
 
-:desktop: Coding time! Now let's embed `Amplify` in our frontend application.
+:desktop: Coding time! Now let's plant `Amplify` in our frontend application.
 
 {% code title="App.js" overflow="wrap" lineNumbers="true" fullWidth="true" %}
 ```jsx
@@ -116,7 +112,9 @@ Amplify.configure({
 ```
 {% endcode %}
 
-* lines 4-14: `process.env` is a way for JavaScript to access the env variables stored locally and load them into a React application. A bit more about it [here](./#2.2.-process.env).&#x20;
+* **lines 4-14**: `process.env` is a way for JavaScript to access the env variables stored locally and load them into a React application. A bit more about it [here](./#2.2.-process.env).&#x20;
+
+#### 1.2.3. Update the checkAuth function HomeFeedPage.js
 
 Now, replace the existing `checkAuth()` function that uses `Cookie` with the following:
 
@@ -142,8 +140,29 @@ Now, replace the existing `checkAuth()` function that uses `Cookie` with the fol
 
 * :maple\_leaf: **line 3**: _(optional) by default is `false`._&#x20;
   * :maple\_leaf: _If set to true, this call will send a request to Cognito to get the latest user data._
+* :maple\_leaf: **line 7**: what `Auth.currentAuthenticatedUser()` returns will become `cognito_user` in line 8.
+* **lines 9-12**: _(optional)_ which will be then used to populate the user's data.&#x20;
 
+#### 1.2.4. Implement Cognito Auth in ProfileInfo.js
 
+Replace the `signOut()` function with Cookie with a new version that uses Cognito's `Auth.signOut()`.
+
+{% code title="ProfileInfo.js" lineNumbers="true" %}
+```javascript
+import { Auth } from "aws-amplify";
+
+  const signOut = async () => {
+    try {
+      await Auth.signOut({ global: true });
+      window.location.href = "/"
+    } catch (error) {
+      console.log('error signing out: ', error)
+    }
+  }
+```
+{% endcode %}
+
+####
 
 #### 1.2.5. Implement Cognito Auth in SignIn.js
 
