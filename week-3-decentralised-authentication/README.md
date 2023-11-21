@@ -162,8 +162,6 @@ import { Auth } from "aws-amplify";
 ```
 {% endcode %}
 
-####
-
 #### 1.2.5. Implement Cognito Auth in SignIn.js
 
 
@@ -176,7 +174,14 @@ import { Auth } from "aws-amplify";
 
 ### 2.1. Amplify
 
+AWS Amplify is a comprehensive set of tools and services to simplify the process of building secure and scalable web and mobile applications with a wide range of features which include but not limited to:&#x20;
 
+* **Authentication** (we are using this one in week 3)
+* API management&#x20;
+* Analytics and monitoring&#x20;
+* Hosting Frontend libraries and UI components
+
+<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption><p>Random moment from Week 3 livestreaming :D</p></figcaption></figure>
 
 ### 2.2. process.env
 
@@ -188,23 +193,8 @@ import { Auth } from "aws-amplify";
     * `.env.production`, etc.
   * `REACT_APP_`: in order for React to auto-load the variables, we need this prefix before every variable we use.
 
-
-
-
-
-**Pick up where you left off**
-
-* fix :`a/ctivity_uuid`&#x20;
-  * one of the routes in the `app.py`
-
-[https://youtu.be/9obl7rVgzJw?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv](https://youtu.be/9obl7rVgzJw?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
-
-
-
-<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
-
 ### 2.3. package-lock.json
 
-
-
-\
+* "_`package-lock.json` is automatically generated for any operations where npm modifies either the `node_modules` tree, or `package.json`. It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates_." (npm, [package-lock.json](https://docs.npmjs.com/cli/v10/configuring-npm/package-lock-json))
+* The `package-lock.json` file is automatically generated and updated by `npm` whenever a new package is installed or the versions of existing packages are changed.&#x20;
+  * It's recommended to commit the `package-lock.json` file together with the `package.json` file so we can save any team members (or your future self) [some trouble](bug-fix-export-auth-imported-as-auth-was-not-found-in-aws-amplify.md).

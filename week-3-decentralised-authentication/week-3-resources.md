@@ -17,9 +17,7 @@ layout:
 
 ### **Week 3 Live stream**
 
-* [OpenTelemetry](https://opentelemetry.io/)
-* [HoneyComb in Python](https://docs.honeycomb.io/getting-data-in/opentelemetry/python-distro/): sending log data to your HoneyComb environment
-* HoneyComb trace - [who am I](https://honeycomb-whoami.glitch.me/)
+* npm, [package-lock.json](https://docs.npmjs.com/cli/v10/configuring-npm/package-lock-json)
 *
 
 ### 2.1.0 Instrument XRay
