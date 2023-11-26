@@ -18,31 +18,24 @@ layout:
 ### **Week 3 Live stream**
 
 * npm, [package-lock.json](https://docs.npmjs.com/cli/v10/configuring-npm/package-lock-json)
-*
 
-### 2.1.0 Instrument XRay
+### 3.1.0 Cognito Custom Pages
 
-* StackOverFlow: [What are the best practises for setting up x-ray daemon?](https://stackoverflow.com/questions/54236375/what-are-the-best-practises-for-setting-up-x-ray-daemon)
-* Docker: [amazon/aws-xray-daemon](https://hub.docker.com/r/amazon/aws-xray-daemon)
-  * Github: [aws / aws-xray-daemon](https://github.com/aws/aws-xray-daemon)
-* [AWS Xray](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html): boto3 XRay client documentation
-  * Github: [AWS XRay SDK Py11thon](https://github.com/aws/aws-xray-sdk-python)
-  * [Boto3](https://github.com/boto/boto3): Python AWS SDK
-  * [Segment Dynamic Naming](https://docs.aws.amazon.com/xray-sdk-for-python/latest/reference/configurations.html#segment-dynamic-naming)
+* StackOverFlow: [how-to-change-user-status-force-change-password](https://stackoverflow.com/questions/40287012/how-to-change-user-status-force-change-password)
 
-### 2.2.0 CloudWatch Logs
+### 3.2.0&#x20;
 
 * Python
   * [watchtower](../week-1-dockerise-app/): a log handler for [Amazon Web Services CloudWatch Logs](https://aws.amazon.com/blogs/aws/cloudwatch-log-service/).
   * AWS: [Amazon CloudWatch Logs endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/cwl\_region.html)
 
-### 2.3.0 Rollbar
+### 3.3.0&#x20;
 
 * [Rollbar](https://rollbar.com/): error monitoring platform
   * [Rollbar SDK configuration reference](https://docs.rollbar.com/docs/python-configuration-reference)
 * StackOverFlow: [flask-deprecated-before-first-request-how-to-update](https://stackoverflow.com/questions/73570041/flask-deprecated-before-first-request-how-to-update/74629704#74629704)
 
-### 2.4.0 X-Ray Subsegments
+### 3.4.0&#x20;
 
 * Olga Timofeeva's blog: [How to add custom X-Ray Segments for Containerised Flask Application](https://olley.hashnode.dev/aws-free-cloud-bootcamp-instrumenting-aws-x-ray-subsegments)
 * [Sending segment batch failed with: NoCredentialProviders: no valid provider #59](https://github.com/aws/aws-xray-daemon/issues/59)
